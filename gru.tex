@@ -25,13 +25,13 @@
         draw=orange!70,
         inner sep=-0.5pt,
         minimum height =.2cm,
-        fill=orange!50,
+        fill=orange!30,
     },
     function/.style={% For functions
         ellipse,
         draw=orange!70,
         inner sep=1pt,
-        fill=orange!50,
+        fill=orange!30,
     },
     cellstate/.style={% For external inputs and outputs
         circle,
@@ -39,7 +39,7 @@
         line width = .75pt,
         minimum width=1cm,
         inner sep=1pt,
-        fill=red!50,
+        fill=red!30,
     },
     input/.style={% For external inputs and outputs
         circle,
@@ -47,7 +47,7 @@
         line width = .75pt,
         minimum width=1cm,
         inner sep=1pt,
-        fill=blue!50,
+        fill=blue!30,
     },
     hidden/.style={% For external inputs and outputs
         circle,
@@ -55,7 +55,7 @@
         line width = .75pt,
         minimum width=1cm,
         inner sep=1pt,
-        fill=violet!50,
+        fill=violet!30,
     },
     gt/.style={% For internal inputs
         rectangle,
@@ -63,7 +63,7 @@
         minimum width=4mm,
         minimum height=3mm,
         inner sep=1pt,
-        fill=orange!50,
+        fill=orange!30,
     },
     mylabel/.style={
         font=\scriptsize\sffamily
@@ -129,6 +129,10 @@
     % Outputs
     \draw [->, ArrowC2] (add1) -| (h2);
     \draw [->, ArrowC2] (add1) -- (h3);
+
+    % Text
+    \node at (-0.35,0.4) {$r_t$};
+    \node at (0.7,-0.4) {$u_r$};
 
 \end{tikzpicture}
 
